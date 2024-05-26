@@ -1,4 +1,5 @@
-import { currencies } from "mercadopago/dist/clients/commonTypes";
+import { currencies } from "./currencies";
+
 
 export type productType = {
     id: string;

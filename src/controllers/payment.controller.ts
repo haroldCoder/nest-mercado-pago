@@ -14,15 +14,15 @@ export class PaymentController{
         const arrayProducts: Array<productType> = [
             {
                 title: "Asus RTX 3050",
-                unit_price: 680,
-                currency_id: "USD",
+                unit_price: 5000,
+                currency_id: "COP",
                 quantity: 1,
                 id: "Asus RTX 3050"
             },
             {
                 title: "Mouse Gaming Logitec",
-                unit_price: 180,
-                currency_id: "USD",
+                unit_price: 2000,
+                currency_id: "COP",
                 quantity: 1,
                 id: "Mouse Gaming Logitec"
             }
