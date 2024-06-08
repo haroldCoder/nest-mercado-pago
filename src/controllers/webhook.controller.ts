@@ -9,6 +9,6 @@ export class webhookController{
     @Get("api/v1/webhook")
     @Bind(Request(), Response())
     async ListenPayment(req: express.Request, res: express.Response){
-        res.status(204).json(await this.webhook.ListenHookPayment({data_id: req.query.data_id.toString(), type: req.query.type.toString()}));
+        res.status(200).json(await this.webhook.ListenHookPayment({data_id: req.query["data.id"], type: req.query.type}));
     }
 }

@@ -26,6 +26,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Create How to Set Up Environment Variables
+
+**Create a `.env` file in the root of the project**
+
+
+## Environment variables
+
+ACCESS_TOKEN= security token of your integration
+SECURE_URL_PAYMENT= url for indicate if your pay is succefully
+
 ## Installation
 
 ```bash

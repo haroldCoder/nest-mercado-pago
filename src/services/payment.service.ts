@@ -18,13 +18,13 @@ export class PaymentService{
         const response = await this.preferences.create({
             body: {
                 items: products,
-                // back_urls: {
-                //     success: "http://localhost:3000/success",
-                //     failure: "http://localhost:3000/failed",
-                //     pending: "http://localhost:3000/pending"
-                // },
-                // auto_return: "approved",
-                // notification_url: process.env.SECURE_URL_PAYMENT,
+                back_urls: {
+                    success: "http://localhost:3000/success",
+                    failure: "http://localhost:3000/failed",
+                    pending: "http://localhost:3000/pending"
+                },
+                auto_return: "approved",
+                notification_url: `${process.env.SECURE_URL_PAYMENT}/api/v1/webhook`,
             }
         })
         const {items, init_point} = response;
